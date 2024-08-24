@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+    p{
+        color: red;
+        font-size: larger;
+    }
+    h1{
+        background-color: aqua;
+    }
+    table{
+border: 10px solid black;
+/* border-collapse: collapse; */
+    }
+</style>
+    <p>Selector is a tag in which we can select html tags to apply styles by using CSS. </p>
+<p><ul>
+    <li>Simple Selector / Type Selector / Tag Selector</li>
+    <ol>
+        <li>Element Selector</li>
+    <li>Class Selector</li>
+    <li>ID Selector</li>
+</ol>
+    <li>Pseudo-class Selector</li>
+    <li>Multiple Selector</li>
+</ul></p>
+
+<!-- Element Selector -->
+<br>
+<br>
+<p>Let's discuss about <strong>Simple Selector's</strong> -> </p>
+<br>
+<p> Element selector : It is a particular type of selector used to select a particular tag and apply style on all of it.</p>
+<h1>This is my first heading </h1>
+<h1>This is my second heading </h1>
+
+<table>
+    <tr>
+        <td>A</td>
+    <td>B</td>
+</tr>
+    <tr>
+        <td>C</td>
+    <td>D</td>
+</tr>
+    <tr>
+        <td>E</td>
+    <td>F</td>
+</tr>
+</table>
+<br>
+<br>
+
+<!-- Class Selector -->
+
+<p>Class Selector : It is a particular type of selector used to apply styles on a element by its class attribute. To Select
+an HTML element by its class using CSS, a period(.) must be prepended to the class's name.</p>
+<style>
+
+.green{
+    color: green;
+}
+
+.Blue{
+    color: blue;
+}
+
+.small{
+    font-size: small;
+}
+.larger{
+    font-size: larger;
+}
+#first-button{
+    color: brown;
+}
+#intro-para{
+    color: blueviolet;
+background-color: aqua;
+}
+
+button:hover{
+    color: blue;
+}
+a:hover{
+    color:black
+}
+</style>
+
+<p class="green"> ABCD </p>
+<P class="green">PQRS</P>
+<p class="Blue">XYZ</p>
+
+
+<h1 class="small"> TOM</h1>
+<h2 class="small">JERRY</h2>
+<h3 class="small">SPIKE</h3>
+
+<h4 class="larger">NIBBLES</h4>
+<h5 class="larger">TWITTY</h5>
+<h6 class="larger">BUCH</h6>
+
+<!-- ID Selector -->
+
+<article> <ul>
+   <p> ID Selector : For situations where you need more speciality in styling, you may also select elements for CSS using an id
+attribute. You can have different ids associated with a class ( although a class is not required).
+</p>
+
+<li>
+    The id attribute can be added to an element, along with a class attribute. On the CSS side, the delineation is made by
+    using # to represent an id, the same way . is used for class.
+</li>
+<li>
+    ID is unique but class is generic.
+</li>
+</ul> </article>
+
+<button id="first-button">
+    Submit
+</button>
+<p id="intro-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, deleniti.</p>
+
+<!-- Pseudo-classes Selector -->
+
+<p>Let's discuss about <strong>Pseudo-classes Selector's</strong> -> </p>
+
+<p> Pseudo-classes Selector : A CSS pseudo-class is a keyword added to a selector that specifies a special state of the
+selected elements. For example: hover can be used to change a button's color when the user's pointer hovers over it.</p>
+
+<button> Reset </button>
+<br>
+<br>
+<a href="tel:+916297722316" alt=" Not reachable" target="_blank"> Call me</a>
+
+<br>
+
+<!-- Multiple Selecctor  -->
+
+<p>Let's discuss about Multiple Selector's -> </p>
+
+<p>Multiple Selector : We apply styles in multiple html tags by using it. EX- table,tr,td{...} </p>
+
+</body>
+</html>

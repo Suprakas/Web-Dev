@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<STYLE>
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: rgb(15, 176, 12);
+        margin: 10px;
+        padding: 25px;
+    }
+    #org{
+background-color: orangered;
+    }
+    #wht{
+background-color: rgb(7, 125, 95);
+    }
+    #grn{
+background-color: aqua;
+    }
+    .parent{
+        color: red;
+        background-color: blueviolet;
+        border: 10px;
+        height: 500px;
+        width: 500px;
+    }
+    .child{
+        color: black;
+        background-color: blue;
+        border: 10px;
+        height: 10%;
+        width: 10%; 
+    }
+    #first{
+        background-color: aqua;
+        width: 50vw;
+        height: 50vh;
+    }
+</STYLE>
+
+</head>
+<body>
+    <p>Box in CSS</p>
+    <div class="box" id="org">A</div>
+    <div class="box" id="wht">B</div>
+    <div class="box" id="grn">C</div>
+
+<div class="parent"> Percentage Unit
+    <div class="child"> Child Unit</div>
+</div>
+<p>
+    em-> relative to parent element.
+    rem -> 
+<br>    
+relative to root tag -> html
+</p>
+<br>
+<p id="first">
+    vw -> 1/100 of the width of viewport.
+    <br>
+    vh -> 1/100 of the height of viewport.
+</p>
+</body>
+</html>
