@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        table , th, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            caption-side: bottom;
+        }
+    </style>
+    
+<table>
+    
+    <tr>
+        <th>Month</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <th>Jan</th>
+    <td>1000</td>
+</tr>
+    <tr>
+        <th>Feb</th>
+    <td>2000</td>
+</tr>
+    <tr>
+        <th>March</th>
+    <td>1400</td>
+</tr>
+    <tr>
+        <th>Total</th>
+    <td>4400</td>
+</tr>
+</table>
+
+<br>
+<br>
+<!-- rowspan & colspan & colgroup -->
+
+<table>
+
+    <caption>My new table</caption>
+
+<tr>
+
+<td>abcd</td>
+<td>abcd</td>
+<td rowspan="2", colspan="2">abcd</td>
+<!-- <td>abcd</td> -->
+</tr>
+
+<tr>
+
+<td colspan="2"> abcd </td>
+<!-- <td>abcd</td>
+<td>abcd</td> -->
+
+</tr>
+
+<tr>
+
+<td>abcd</td>
+<td rowspan="3">abcd</td>
+<td>abcd</td>
+<td>abcd</td>
+</tr>
+
+<tr>
+
+<td>abcd</td>
+<!-- <td>abcd</td> -->
+<td>abcd</td>
+<td>abcd</td>
+</tr>
+
+<tr>
+
+<td>abcd</td>
+<!-- <td>abcd</td> -->
+<td>abcd</td>
+<td>abcd</td>
+</tr>
+
+</table>
+
+<!-- practice table & colgroup tag -->
+
+<table>
+
+    
+    <colgroup>
+        <col span="" style="background-color: aqua;">
+        <col span="" style="background-color: antiquewhite;">
+        <col span="" style="background-color:blueviolet;">
+    
+        </colgroup>
+    
+    <tr>
+    
+        <td rowspan="2">State of Health </td>
+        <td colspan="2">Fasting Value6</td>
+        <td>After Eating</td>
+    </tr>
+
+    <tr>
+
+    <td>Minimum</td>
+    <td>Maximum</td>
+    <td> 2 hours after eating </td>
+
+    </tr>
+
+    <tr>
+
+        <td> Healthy</td>
+    <td>70</td>
+    <td>100</td>
+    <td>Less than 140</td>
+
+    </tr>
+
+    <tr>
+
+        <td>Pre-Diabatic</td>
+    <td>101</td>
+    <td>126</td>
+    <td>140 to 200</td>
+
+    </tr>
+    <tr>
+
+        <td>Diabetes</td>
+    <td>More than 126</td>
+    <td>N/A</td>
+    <td>More than 200</td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
