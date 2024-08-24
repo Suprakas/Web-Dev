@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+
+    <!-- Ekhane amra JS use korei Browser a giye HTML Class, id banabo Dom manipulate korbo. -->
+    
+    <script>
+
+        const div = document.createElement('div');
+        console.log(div); // console a div toiri hbe but browser a dekhacce na
+
+        div.className = "main"; // main class toiri hbe div a
+        div.id = "myId"; // div class a myId id toiri hbe
+
+         div.setAttribute("title","generated title"); // evabe amra title set korte pari
+         div.style.backgroundColor = "green"
+         div.style.padding = "12px"
+         div.innerText = "Chai aur Code"
+
+         // ata akno memory te ache akn atake amra document a attach korbo tle visible hbe
+
+        // setAttribute better use kora ager gulor theke
+
+        document.body.appendChild(div);
+
+
+
+
+    </script>
+
+</body>
+</html>

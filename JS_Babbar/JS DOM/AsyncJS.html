@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout and Set interval</title>
+</head>
+<body>
+    <h1>Let's discuss about Set timeout and Set interval </h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+
+    <script>
+
+        // a. setTimeout() -> mentioned time interval er por function execute hbe akbar e 
+
+        // setTimeout(function(){
+        //     console.log("Suprakash"); // 2 sec por nam print hbe
+        // }, 2000);
+
+        // Alternative ->
+
+       const myName = function namPrint() {
+            console.log("Suprakash");
+        };
+
+        setTimeout(myName, 2000); // same kaj hbe 2 sec por nam print hbe, akhane myName callback function tak a Handler bole.
+
+        const changeText = function (){
+            document.querySelector('h1').innerHTML = " Let's move to Async JS"
+        }
+
+        const changeMe = setTimeout(changeText, 6000); // After 4 secs it will change the H1 tags inner HTML.
+
+        // There is a process by which we can clear the setTimeout.
+
+        document.querySelector('#stop').addEventListener("click", function(){
+            clearTimeout(changeMe);
+            console.log("Stopped.");
+        });
+        
+
+        // b. setInterval() -> mentioned time interval por por declare kora function execute korei jabe.
+    
+        const sayDate = function(str){
+            console.log(str, Date.now());
+        };
+        const intervalId = setInterval( sayDate, 1000, "hi"); // 1 sec por por hi r datenow diye jabe, atakeo stop kora jay
+
+        clearInterval(intervalId);
+        
+    
+    
+    </script>
+</body>
+</html>
